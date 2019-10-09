@@ -32,7 +32,7 @@ export default function(...extend) {
     input: true,
     key: 'html',
     as: 'html',
-    rows: 3,
+    columns: 3,
     tooltip: 'The HTML template for the result data items.'
   }].concat(editForm.components);
   return editForm;

@@ -53,7 +53,7 @@ export class Component extends Element {
   sanitize(dirty: string): any;
   renderString(template: any, data: any): HTMLElement;
   performInputMapping(input: any): any;
-  getBrowserLanguage(): string | null;
+  getBcolumnserLanguage(): string | null;
   beforeNext(): any;
   beforePage(): any;
   beforeSubmit(): any;
