@@ -1386,7 +1386,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function(ctx) {\nvar __t, __p = '', __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n__p += '<div id=\"' +\n((__t = (ctx.id)) == null ? '' : __t) +\n'\" class=\"' +\n((__t = (ctx.classes)) == null ? '' : __t) +\n'\"';\n if (ctx.styles) { ;\n__p += ' styles=\"' +\n((__t = (ctx.styles)) == null ? '' : __t) +\n'\"';\n } ;\n__p += ' ref=\"component\">\\n  ';\n if (ctx.visible) { ;\n__p += '\\n  ' +\n((__t = (ctx.children)) == null ? '' : __t) +\n'\\n  <p ref=\"messageContainer\" class=\"help is-danger\"></p>\\n  ';\n } ;\n__p += '\\n</div>\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bootstrap/component/form.ejs.js?");
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function(ctx) {\nvar __t, __p = '', __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n__p += '<div id=\"' +\n((__t = (ctx.id)) == null ? '' : __t) +\n'\"\\n\\n     ';\n if (ctx.classes.split(' ')[0] == 'row') { ;\n__p += ' class = \"' +\n((__t = (ctx.classes.replace(/row/g, 'columns'))) == null ? '' : __t) +\n'\" ';\n } ;\n__p += '\\n     ';\n if (ctx.styles) { ;\n__p += ' styles=\\'' +\n((__t = (ctx.styles)) == null ? '' : __t) +\n'\\'';\n } ;\n__p += '\\n     ref=\\'component\\' >\\n  ';\n if (ctx.visible) { ;\n__p += '\\n  ' +\n((__t = (ctx.children)) == null ? '' : __t) +\n'\\n  <p ref=\"messageContainer\" class=\"help is-danger\"></p>\\n  ';\n } ;\n__p += '\\n</div>\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bootstrap/component/form.ejs.js?");
 
 /***/ }),
 
@@ -1650,7 +1650,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function(ctx) {\nvar __t, __p = '', __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n__p += '<' +\n((__t = (ctx.tag)) == null ? '' : __t) +\n' class=\"' +\n((__t = ( ctx.component.className )) == null ? '' : __t) +\n'\" ref=\"html\"\\r\\n  ';\n ctx.attrs.forEach(function(attr) { ;\n__p += '\\r\\n    ' +\n((__t = (attr.attr)) == null ? '' : __t) +\n'=\"' +\n((__t = (attr.value)) == null ? '' : __t) +\n'\"\\r\\n  ';\n }) ;\n__p += '\\r\\n>' +\n((__t = (ctx.content)) == null ? '' : __t);\n if (!ctx.singleTags || ctx.singleTags.indexOf(ctx.tag) === -1) { ;\n__p += '</' +\n((__t = (ctx.tag)) == null ? '' : __t) +\n'>';\n } ;\n__p += '\\r\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bootstrap/html/form.ejs.js?");
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function(ctx) {\nvar __t, __p = '', __j = Array.prototype.join;\nfunction print() { __p += __j.call(arguments, '') }\n__p += '<' +\n((__t = (ctx.tag)) == null ? '' : __t) +\n'\\n    ';\n if ( !!ctx.tag.match(/[h, H]\\d/) ) { ;\n__p += '\\n    class=\"title is-' +\n((__t = (ctx.tag.match(/[h, H]\\d/)[0][1])) == null ? '' : __t) +\n'\" ';\n } ;\n__p += ' ref=\"html\"\\n';\n ctx.attrs.forEach(function(attr) { ;\n__p += '\\n    ' +\n((__t = (attr.attr)) == null ? '' : __t) +\n'=\"' +\n((__t = (attr.value)) == null ? '' : __t) +\n'\"\\n  ';\n }) ;\n__p += '\\n>' +\n((__t = (ctx.content)) == null ? '' : __t);\n if (!ctx.singleTags || ctx.singleTags.indexOf(ctx.tag) === -1) { ;\n__p += '</' +\n((__t = (ctx.tag)) == null ? '' : __t) +\n'>';\n } ;\n__p += '\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bootstrap/html/form.ejs.js?");
 
 /***/ }),
 
@@ -2417,7 +2417,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function(ctx) {\nvar __t, __p = '';\n__p += '<div class=\"card card-body bg-light\">\\r\\n  <div ref=\"' +\n((__t = (ctx.nestedKey)) == null ? '' : __t) +\n'\">\\r\\n    ' +\n((__t = (ctx.children)) == null ? '' : __t) +\n'\\r\\n  </div>\\r\\n</div>\\r\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bootstrap/well/form.ejs.js?");
+eval("Object.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default=function(ctx) {\nvar __t, __p = '';\n__p += '<div class=\"section\">\\n  <div ref=\"' +\n((__t = (ctx.nestedKey)) == null ? '' : __t) +\n'\">\\n    ' +\n((__t = (ctx.children)) == null ? '' : __t) +\n'\\n  </div>\\n</div>\\n';\nreturn __p\n}\n\n//# sourceURL=webpack:///./lib/templates/bootstrap/well/form.ejs.js?");
 
 /***/ }),
 
